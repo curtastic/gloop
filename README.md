@@ -1,5 +1,5 @@
 # gloop.js
-Fixes your game loop to a certain FPS.
+A tiny js file to fix your game loop to a certain FPS.
 
 # Features:
 - Set your desired FPS and it will run your updateFunc() that many times per second.
@@ -15,16 +15,16 @@ Fixes your game loop to a certain FPS.
 <html>
 	<body>
 		<script src="gloop.js"></script>
-<script>
-var playerX = 0
-function updateGame() {
-  playerX++
-}
-function drawGame() {
-  console.log(playerX)
-}
-gloop.start(updateGame, drawGame, 60)
-</script>
+		<script>
+			var playerX = 0
+			function updateGame() {
+  				playerX++
+			}
+			function drawGame() {
+  				console.log(playerX)
+			}
+			gloop.start(updateGame, drawGame, 60)
+		</script>
 	</body>
 </html>
 ```
