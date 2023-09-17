@@ -11,6 +11,7 @@ Fixes your game loop to a certain FPS.
 - No delta timing. This is because delta timing can result in different outcomes on slow devices, such as bullets skipping through enemies.
 
 # Example:
+```
 var playerX = 0
 function updateGame() {
   playerX++
@@ -19,3 +20,4 @@ function drawGame() {
   console.log(playerX)
 }
 gloop.start(updateGame, drawGame, 60)
+```
